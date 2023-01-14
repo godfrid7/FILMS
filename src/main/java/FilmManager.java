@@ -26,10 +26,10 @@ public class FilmManager {
 
     public String[] findLast() {
         int resultLength;
-        if (films.length < 10) {
+        if (films.length < limit) {
             resultLength = films.length;
         } else {
-            resultLength = 10;
+            resultLength = limit;
         }
         String[] tmp = new String[resultLength];
         for (int i = 0; i < tmp.length; i++) {
@@ -37,8 +37,5 @@ public class FilmManager {
         }
         return tmp;
    }
-
-
-
 
     }
